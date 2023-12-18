@@ -207,7 +207,7 @@ namespace SuplementoParaGerarPDFSolidWorks
             string Title = "C# Addin", ToolTip = "C# Addin";
 
 
-            int[] docTypes = new int[]{(int)swDocumentTypes_e.swDocASSEMBLY,
+            int[] docTypes = new int[] {(int)swDocumentTypes_e.swDocASSEMBLY,
                                        (int)swDocumentTypes_e.swDocDRAWING,
                                        (int)swDocumentTypes_e.swDocPART};
 

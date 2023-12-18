@@ -131,24 +131,33 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="EventHandling.cs" />
+    <Compile Include="InterfaceSW.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterfaceSW.Designer.cs">
+      <DependentUpon>InterfaceSW.cs</DependentUpon>
+    </Compile>
     <Compile Include="PMPHandler.cs" />
     <Compile Include="SwAddin.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="UserPMPage.cs" />
-    <EmbeddedResource Include="mainicon_20.png" />
-    <EmbeddedResource Include="mainicon_32.png" />
-    <EmbeddedResource Include="mainicon_40.png" />
-    <EmbeddedResource Include="mainicon_64.png" />
-    <EmbeddedResource Include="mainicon_96.png" />
-    <EmbeddedResource Include="mainicon_128.png" />
-    <EmbeddedResource Include="toolbar20x.png" />
-    <EmbeddedResource Include="toolbar32x.png" />
-    <EmbeddedResource Include="toolbar40x.png" />
-    <EmbeddedResource Include="toolbar64x.png" />
-    <EmbeddedResource Include="toolbar96x.png" />
-    <EmbeddedResource Include="toolbar128x.png" />
-    <EmbeddedResource Include="AddinIcon.bmp" />
+    <EmbeddedResource Include="InterfaceSW.resx">
+      <DependentUpon>InterfaceSW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\mainicon_20.png" />
+    <EmbeddedResource Include="UI\mainicon_32.png" />
+    <EmbeddedResource Include="UI\mainicon_40.png" />
+    <EmbeddedResource Include="UI\mainicon_64.png" />
+    <EmbeddedResource Include="UI\mainicon_96.png" />
+    <EmbeddedResource Include="UI\mainicon_128.png" />
+    <EmbeddedResource Include="UI\toolbar20x.png" />
+    <EmbeddedResource Include="UI\toolbar32x.png" />
+    <EmbeddedResource Include="UI\toolbar40x.png" />
+    <EmbeddedResource Include="UI\toolbar64x.png" />
+    <EmbeddedResource Include="UI\toolbar96x.png" />
+    <EmbeddedResource Include="UI\toolbar128x.png" />
+    <EmbeddedResource Include="UI\AddinIcon.bmp" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -157,9 +166,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Design\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
